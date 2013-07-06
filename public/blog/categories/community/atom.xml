@@ -4,7 +4,7 @@
   <title><![CDATA[Category: community | crebma]]></title>
   <link href="http://crebma.com/blog/categories/community/atom.xml" rel="self"/>
   <link href="http://crebma.com/"/>
-  <updated>2013-07-06T12:59:09-04:00</updated>
+  <updated>2013-07-06T13:40:59-04:00</updated>
   <id>http://crebma.com/</id>
   <author>
     <name><![CDATA[Amber Conville]]></name>
@@ -23,6 +23,37 @@
 <p>So, using the same basic rules as a code retreat, but with an abbreviated format, we managed to make a worthwhile learning experience in our two hours. We cut exercises down to 20 minutes each, with a maximum of 5 minutes of retrospective. At least one half of each pair has to know how to use the pair&rsquo;s chosen language, as well as have the environment and testing framework already setup to save time. We also stuck with <a href="http://en.wikipedia.org/wiki/Conway's_Game_of_Life">Conway&rsquo;s game of life</a> as a problem most people are familiar with and have worked through before. It actually worked out spectacularly! We have done it several times since, and every time, everyone involved learns something new and has an amazing time. We even manage to use different code retreat exercises (3-5 lines max, no ifs, no loops, etc), and have done these exercises both with and without the facilitator participating in pairs. As a note, if the group is not made up of people who have been to code retreats in the past, it usually works best to have a facilitator who is walking around and helping/guiding.</p>
 
 <p>Given that a code retreat is something that conforms to a certain set of relatively <a href="http://coderetreat.org/facilitating">strict rules and guidelines</a>, much internet sassing back and forth occured, and <a href="http://twitter.com/timwingfield">Tim Wingfield</a> came up with a brilliant idea. If it can&rsquo;t be a code retreat, we should call it a code attack! So we gave these mini code retreats a better name, and they were born in May of 2011.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Is this your first time in prison?]]></title>
+    <link href="http://crebma.com/blog/2011/04/01/is-this-your-first-time-in-prison/"/>
+    <updated>2011-04-01T13:38:00-04:00</updated>
+    <id>http://crebma.com/blog/2011/04/01/is-this-your-first-time-in-prison</id>
+    <content type="html"><![CDATA[<p>I got asked that question three to four times, and each time was a bit more perplexed. Was I expected to have been in a prison before? The last time, though, at lunch, someone followed it up with, &ldquo;you seem pretty comfortable.&rdquo; That alone seems like a worthwhile story, to me.</p>
+
+<p>BUT WAIT! THERE&rsquo;S MORE! There&rsquo;s all of the context, and the actual point, and all the fun bits! Details galore!</p>
+
+<p>So I work with this guy, Dan Wiebe. We both work at Pillar. Dan is an all-around, generally awesome fellow already, but additionally, he works with the LifeLine program to teach guys in prison Java. LifeLine is not just about java, it&rsquo;s also about tons of other awesome programs, but one of them happens to be programming. ANYway, he has had a few code retreats in prison, and I missed them for one reason or another, but this last one, I actually got to go.</p>
+
+<p>I&rsquo;ll admit, I was a bit nervous immediately beforehand. I was pretty certain I would say every wrong thing that could ever be said, and offend everyone. To make things worse, Dan had been talking me up to the prisoners, so I was certain I was not going to live up to expectations. And I was wearing these TERRIBLE pants that I bought the night before at T.J. Maxx because you can&rsquo;t wear denim to prison for some reason. They were man-pants, and the waist bits were <em>just</em> too tight, being the wrong shape and all.</p>
+
+<p>So anyway, we went inside, and were escorted by correctional officers (NOT GUARDS AT ALL) to a computer lab of sorts. Many pairing (or tripling) stations were set up all over the place. We had a quick chat and then dove right in. The problem itself was tennis, a game which I have never played, and am still a little frustrated with. Love? Really? Not zero?</p>
+
+<p>My first triple was with Jason and Adam, and we ping-ponged between the three of us. I got to tell them some neat shortcuts, and they called me a showoff. We had some good discussions about the steps we were taking and decisions we were making throughout. Really cool.</p>
+
+<p>Then we went to lunch, which was in the lunch room (or whatever it&rsquo;s called in prison) with all the prisoners, not just programming ones. Somehow, I got to the front of the lunch line, which was terrible, because I had no idea what to do. Luckily, a java guy (Lee) was right behind me, and he told me what to do, where to get silverware, and where the milk bags were. That&rsquo;s right, milk bags!! Lee and I sat with Ron and another fellow whose name I sadly cannot remember, and chatted about hamcrest and guava while we ate lunch. Turns out, they had hamcrest, but were not necessarily sure how to use it just yet (not even sure if I am). Lunch was not as bad as some made it seem like it might be, but I&rsquo;m not lining up to eat it at any restaurant. The guys did mention that it was probably the best meal they get, but I&rsquo;m just saying. It wasn&rsquo;t terrible.</p>
+
+<p>After lunch, I tripled with Ron and Wes. The first thing we did, even though it may not have been necessary, was make a custom hamcrest matcher. There is nothing quite like the joy of showing another programmer how to make a custom hamcrest matcher. There is always the moment where all becomes clear, and everyone involved experiences pure joy for some small amount of milliseconds. Tears almost come out of yours eyes, but then you remember where you are. It&rsquo;s wonderful. Beyond that, we had more interesting discussions about steps we were taking and decisions we were making. Until almost the end, I found it extremely interesting that we were writing the exact same codebase as we had written in the first triple. And I deleted that code in the beginning, I swear! And REALLY, I was not driving that thing! Ping pong all the way!! At the very end, Wes began working on an enum which would know that love really secretly meant zero, and all the other silliness, but time was up before he could fully relate to us his grand scheme. Sometime just before the end, Dan asked if volunteers would want to stay later if we were allowed, to which I responded, &ldquo;Yeah, I&rsquo;m having fun, why not? I&rsquo;ll stay.&rdquo; The guys I was tripling with thought that was pretty funny. &ldquo;You NEVER hear that in here,&rdquo; they said.</p>
+
+<p>On a personal/social interaction note, I felt ridiculous just in the nick of time about any complaints I had while talking with any of the guys. At one point, one of the guys was talking about having gotten a small amount of sleep the night before. My first thought was, &ldquo;Yeah, me too, that hotel bed was terrible!&rdquo; Luckily I caught myself before it came out of my mouth, because that would really just be ridiculous. I instantly felt like a spoiled brat for having thought so poorly of the hotel.</p>
+
+<p>At the very end, another guy, Mark, was showing us all of the animations he had made. They were AMAZING. He had made a few characters for his family and various prison events, and he had everything from short animated episodes to games. Really neat. He made an episode specifically for our code retreat, which was shown after lunch. He said he had all the computers in the lab doing a network rendering of the animation. This is a thing I didn&rsquo;t even know could happen, and it sounds super-impressive. Lee also showed us some software that he was working on for the prison that looked REALLY nice. I would have liked to see more of that, but our escort arrived, and we had to leave.</p>
+
+<p>After that, we reconvened at a Bob Evans nearby to talk about our day. The best conclusion I could come up with at the time was that I would gladly take any of those guys on my team. Also, it was astounding to see people actually try to discuss and understand. Even when they started to get frustrated, inevitably, without fail, it would change right into something like, &ldquo;this is the area where I need the most work,&rdquo; or, &ldquo;alright, I want to see what you guys are talking about, let&rsquo;s do that.&rdquo; Really cool. On the outside, people do a lot of getting upset and acting like children. That was really refreshing/amazing to be a part of.</p>
+
+<p>All in all, I would totally go back. Without question. I hope I&rsquo;m available next time around, and if given the chance I will gladly teach people about guava. Because it makes java much more reasonable.</p>
 ]]></content>
   </entry>
   

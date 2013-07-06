@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[crebma]]></title>
-  <link href="http://crebma.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: prison | crebma]]></title>
+  <link href="http://crebma.com/blog/categories/prison/atom.xml" rel="self"/>
   <link href="http://crebma.com/"/>
   <updated>2013-07-06T13:40:59-04:00</updated>
   <id>http://crebma.com/</id>
@@ -12,44 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[It's OK to Cheat Sometimes!]]></title>
-    <link href="http://crebma.com/blog/2013/07/06/its-ok-to-cheat-sometimes/"/>
-    <updated>2013-07-06T12:54:00-04:00</updated>
-    <id>http://crebma.com/blog/2013/07/06/its-ok-to-cheat-sometimes</id>
-    <content type="html"><![CDATA[<p>Lots of people have strong opinions about what you should and shouldn&rsquo;t do in testing. For the most part, those rules tend to be right. But deep in the heart of a huge legacy codebase, striving for tdd perfection is often a self-defeating goal. Should you be on a path to refactor and test that codebase towards that perfect tdd goal? Of course! But when you first inherit an enormous untested codebase, or are new to tdd and want to start testing your codebase, it is perfectly ok to take some shortcuts. Here are a couple of sticking points I&rsquo;ve seen people hit and then give up entirely.</p>
-
-<p><strong>DISCLAIMER:</strong> These all assume Kiwi use, because that&rsquo;s all I&rsquo;ve used so far. I&rsquo;m sure there&rsquo;s an easy translation, so long as your chosen testing framework has a robust mocking/stubbing framework in it.</p>
-
-<h4>&ldquo;I have business logic in viewWillAppear, and it&rsquo;s heavily tangled with the rest of my controller!&rdquo;</h4>
-
-<p>Spent the last two hours trying to untangle that code so you can extract it to one or more collaborators? It&rsquo;s ok. That&rsquo;s a good goal that should be met, but it doesn&rsquo;t make sense to string out several days and possibly create several bugs in the process of refactoring untested code. It can be worthwhile to &ldquo;boy scout&rdquo; that code little by little. What that means is that you leave that code a little better than you found it. Perhaps not sparkling clean, but a little better every time you touch it. A shortcut you can use to start heading in that direction is to extract everything that&rsquo;s not [super viewWillAppear] into a separate method, or even just the logical block that contains the logic you are touching. In your spec, use a class extension to declare that method in a place where your specs can see them, but the rest of your production code cannot. Now you can write characterization tests around that private method that will help build a foundation for safe future refactoring.</p>
-
-<h4>&ldquo;This controller uses ivars all over the place that I can&rsquo;t modify!&rdquo;</h4>
-
-<p>This one is not a shortcut, but it is an easy fix. Convert that ivar to a property. If it&rsquo;s a private ivar, here&rsquo;s where the same afore mentioned shortcut comes in: declare that property in a class extension in your specs.</p>
-
-<h4>&ldquo;This chunk of code makes a UIAlertView but I&rsquo;m not actually touching that code so I don&rsquo;t want to deal with it!&rdquo;</h4>
-
-<p>Stub the alloc/init methods. I know, it&rsquo;s hard to hear. You might even be wincing right now. But seriously. Factory type methods might be better, but if you&rsquo;ve already chosen a different spot in that chunk of code to boy scout, it can be helpful to stub so as not to invoke UI code.</p>
-
-<p>Again, I just want to reiterate that these should be used as stop gap measures. You know you&rsquo;re doing it right (and should feel AWESOME) as soon as you can remove these dirty little workarounds. But iOS code had been around long enough now that legacy codebases not only exist, but have grown into unmaintainable masses.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[code attack!]]></title>
-    <link href="http://crebma.com/blog/2013/07/05/code-attack/"/>
-    <updated>2013-07-05T22:48:00-04:00</updated>
-    <id>http://crebma.com/blog/2013/07/05/code-attack</id>
-    <content type="html"><![CDATA[<p>One day, we at <a href="http://craftsmanguild.org">Craftsman Guild</a> decided we wanted to have a mini code retreat. That is to say, we wanted to swap pairs, delete code, and learn from one another in the two hours that we have for our user group.</p>
-
-<p>So, using the same basic rules as a code retreat, but with an abbreviated format, we managed to make a worthwhile learning experience in our two hours. We cut exercises down to 20 minutes each, with a maximum of 5 minutes of retrospective. At least one half of each pair has to know how to use the pair&rsquo;s chosen language, as well as have the environment and testing framework already setup to save time. We also stuck with <a href="http://en.wikipedia.org/wiki/Conway's_Game_of_Life">Conway&rsquo;s game of life</a> as a problem most people are familiar with and have worked through before. It actually worked out spectacularly! We have done it several times since, and every time, everyone involved learns something new and has an amazing time. We even manage to use different code retreat exercises (3-5 lines max, no ifs, no loops, etc), and have done these exercises both with and without the facilitator participating in pairs. As a note, if the group is not made up of people who have been to code retreats in the past, it usually works best to have a facilitator who is walking around and helping/guiding.</p>
-
-<p>Given that a code retreat is something that conforms to a certain set of relatively <a href="http://coderetreat.org/facilitating">strict rules and guidelines</a>, much internet sassing back and forth occured, and <a href="http://twitter.com/timwingfield">Tim Wingfield</a> came up with a brilliant idea. If it can&rsquo;t be a code retreat, we should call it a code attack! So we gave these mini code retreats a better name, and they were born in May of 2011.</p>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[Is this your first time in prison?]]></title>
