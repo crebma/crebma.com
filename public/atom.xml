@@ -4,7 +4,7 @@
   <title><![CDATA[crebma]]></title>
   <link href="http://crebma.com/atom.xml" rel="self"/>
   <link href="http://crebma.com/"/>
-  <updated>2013-07-05T22:31:22-04:00</updated>
+  <updated>2013-07-06T00:13:54-04:00</updated>
   <id>http://crebma.com/</id>
   <author>
     <name><![CDATA[Amber Conville]]></name>
@@ -12,5 +12,18 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[code attack!]]></title>
+    <link href="http://crebma.com/blog/2013/07/05/code-attack/"/>
+    <updated>2013-07-05T22:48:00-04:00</updated>
+    <id>http://crebma.com/blog/2013/07/05/code-attack</id>
+    <content type="html"><![CDATA[<p>One day, we at <a href="http://craftsmanguild.org">Craftsman Guild</a> decided we wanted to have a mini code retreat. That is to say, we wanted to swap pairs, delete code, and learn from one another in the two hours that we have for our user group.</p>
+
+<p>So, using the same basic rules as a code retreat, but with an abbreviated format, we managed to make a worthwhile learning experience in our two hours. We cut exercises down to 20 minutes each, with a maximum of 5 minutes of retrospective. At least one half of each pair has to know how to use the pair&rsquo;s chosen language, as well as have the environment and testing framework already setup to save time. We also stuck with <a href="http://en.wikipedia.org/wiki/Conway's_Game_of_Life">Conway&rsquo;s game of life</a> as a problem most people are familiar with and have worked through before. It actually worked out spectacularly! We have done it several times since, and every time, everyone involved learns something new and has an amazing time. We even manage to use different code retreat exercises (3-5 lines max, no ifs, no loops, etc), and have done these exercises both with and without the facilitator participating in pairs. As a note, if the group is not made up of people who have been to code retreats in the past, it usually works best to have a facilitator who is walking around and helping/guiding.</p>
+
+<p>Given that a code retreat is something that conforms to a certain set of relatively <a href="http://coderetreat.org/facilitating">strict rules and guidelines</a>, much internet sassing back and forth occured, and <a href="http://twitter.com/timwingfield">Tim Wingfield</a> came up with a brilliant idea. If it can&rsquo;t be a code retreat, we should call it a code attack! So we gave these mini code retreats a better name, and they were born in May of 2011.</p>
+]]></content>
+  </entry>
   
 </feed>
