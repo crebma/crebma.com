@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://yoursite.com/archives/</loc>
+        <loc>http://crebma.com/archives/</loc>
         <lastmod>2013-07-05T22:17:33-04:00</lastmod>
     </url>
     <url>
-        <loc>http://yoursite.com/blog/archives/</loc>
+        <loc>http://crebma.com/blog/archives/</loc>
         <lastmod>2013-07-05T22:17:33-04:00</lastmod>
     </url>
     <url>
-        <loc>http://yoursite.com/blog/</loc>
+        <loc>http://crebma.com/blog/</loc>
         <lastmod>2013-07-05T22:17:33-04:00</lastmod>
     </url>
     <url>
-        <loc>http://yoursite.com/</loc>
+        <loc>http://crebma.com/</loc>
         <lastmod>2013-07-05T22:17:33-04:00</lastmod>
     </url>
     <url>
-        <loc>http://yoursite.com/robots.txt</loc>
+        <loc>http://crebma.com/robots.txt</loc>
         <lastmod>2013-07-05T22:17:33-04:00</lastmod>
     </url>
 </urlset>
