@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[crebma]]></title>
-  <link href="http://crebma.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: craftsman guild | crebma]]></title>
+  <link href="http://crebma.com/blog/categories/craftsman-guild/atom.xml" rel="self"/>
   <link href="http://crebma.com/"/>
   <updated>2013-07-06T00:25:01-04:00</updated>
   <id>http://crebma.com/</id>

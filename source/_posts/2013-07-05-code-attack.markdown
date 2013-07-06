@@ -3,7 +3,7 @@ layout: post
 title: "code attack!"
 date: 2013-07-05 22:48
 comments: true
-categories: 
+categories: ["community","craftsman guild"]
 ---
 One day, we at [Craftsman Guild](http://craftsmanguild.org) decided we wanted to have a mini code retreat. That is to say, we wanted to swap pairs, delete code, and learn from one another in the two hours that we have for our user group. 
 
