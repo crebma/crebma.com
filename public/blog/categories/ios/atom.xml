@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ios | crebma]]></title>
   <link href="http://crebma.com/blog/categories/ios/atom.xml" rel="self"/>
   <link href="http://crebma.com/"/>
-  <updated>2013-07-06T13:40:59-04:00</updated>
+  <updated>2013-07-18T14:46:28-04:00</updated>
   <id>http://crebma.com/</id>
   <author>
     <name><![CDATA[Amber Conville]]></name>
@@ -12,6 +12,43 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[A Trick!]]></title>
+    <link href="http://crebma.com/blog/2013/07/18/a-trick/"/>
+    <updated>2013-07-18T14:35:00-04:00</updated>
+    <id>http://crebma.com/blog/2013/07/18/a-trick</id>
+    <content type="html"><![CDATA[<p>After spending a little while trying to figure out how to wrap tests around a bit of code that looked pretty similar to this:</p>
+
+<p>```
+[[NSOperationQueue mainQueue] addOperationWithBlock:^{</p>
+
+<pre><code>            [self.service getAThingWithSuccess:^() {
+                [self doOtherStuff];
+            } andFailure:^{
+                [self ohNoes];
+           }];
+</code></pre>
+
+<p>```</p>
+
+<p>so I could get at the [self doOtherStuff] parts and test them, I found this stub:withBlock: selector in Kiwi. So, I tried the following:</p>
+
+<p>```
+[[NSOperationQueue mainQueue] stub:@selector(addOperationWithBlock:)</p>
+
+<pre><code>                     withBlock:^id(NSArray *params) {
+                            void(^block)(void) = params[0];
+                            block();
+                            return nil;
+                       }];
+</code></pre>
+
+<p>```</p>
+
+<p>and it worked perfectly! Woot! In my particular case, I was actually using a kiwi spy to capture that success block sent to the service (though maybe I&rsquo;ll use this new trick instead), so after calling block() in that stub, I was able to immediately get the argument from the spy, whereas all other attempts at trickery were giving me &ldquo;argument not captured&rdquo; issues.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[It's OK to Cheat Sometimes!]]></title>

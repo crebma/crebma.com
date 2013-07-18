@@ -1,0 +1,31 @@
+---
+layout: post
+title: "A Trick!"
+date: 2013-07-18 14:35
+comments: true
+categories: ["ios","tdd","legacy","refactor"]
+---
+After spending a little while trying to figure out how to wrap tests around a bit of code that looked pretty similar to this:
+
+```
+[[NSOperationQueue mainQueue] addOperationWithBlock:^{
+                [self.service getAThingWithSuccess:^() {
+					[self doOtherStuff];
+				} andFailure:^{
+                    [self ohNoes];
+               }];
+```
+
+so I could get at the [self doOtherStuff] parts and test them, I found this stub:withBlock: selector in Kiwi. So, I tried the following:
+
+
+```
+[[NSOperationQueue mainQueue] stub:@selector(addOperationWithBlock:)
+						 withBlock:^id(NSArray *params) {
+		                        void(^block)(void) = params[0];
+        		                block();
+                		        return nil;
+                 		   }];
+```
+
+and it worked perfectly! Woot! In my particular case, I was actually using a kiwi spy to capture that success block sent to the service (though maybe I'll use this new trick instead), so after calling block() in that stub, I was able to immediately get the argument from the spy, whereas all other attempts at trickery were giving me "argument not captured" issues.

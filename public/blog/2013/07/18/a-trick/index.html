@@ -5,11 +5,17 @@
 	<script data-cfasync="false" type="text/javascript" src="//use.typekit.net/axj3cfp.js"></script>
 	<script data-cfasync="false" type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<meta charset="utf-8">
-	<title>Category: ios  | crebma</title>
+	<title>A Trick!  | crebma</title>
 
 <meta name="author" content="Amber Conville"> 
 
-<meta name="description" content="Category: ios"> <meta name="keywords" content="">
+<meta name="description" content="After spending a little while trying to figure out how to wrap tests around a bit of code that looked pretty similar to this: 1
+2
+3
+4
+5
+6
+[[ &hellip;"> <meta name="keywords" content="">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -96,51 +102,91 @@ $(document).ready(
 
 </header>
 
-	<div id="content" class="inner">
-	
+	<div id="content" class="inner"><article class="post">
+	<h2 class="title">A Trick!</h2>
+	<div class="entry-content"><p>After spending a little while trying to figure out how to wrap tests around a bit of code that looked pretty similar to this:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>[[NSOperationQueue mainQueue] addOperationWithBlock:^{
+</span><span class='line'>                [self.service getAThingWithSuccess:^() {
+</span><span class='line'>                  [self doOtherStuff];
+</span><span class='line'>              } andFailure:^{
+</span><span class='line'>                    [self ohNoes];
+</span><span class='line'>               }];</span></code></pre></td></tr></table></div></figure>
 
 
-	
-	
-	<section class="archives"><h1 class="year">2013</h1>
+<p>so I could get at the [self doOtherStuff] parts and test them, I found this stub:withBlock: selector in Kiwi. So, I tried the following:</p>
 
-<article>
-	<h2 class="title"><a href="/blog/2013/07/18/a-trick/">A Trick!</a></h2>
-	<div class="meta">
-		<span class="date">Jul 18</span>
-		<span class="tags">
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>[[NSOperationQueue mainQueue] stub:@selector(addOperationWithBlock:)
+</span><span class='line'>                       withBlock:^id(NSArray *params) {
+</span><span class='line'>                              void(^block)(void) = params[0];
+</span><span class='line'>                              block();
+</span><span class='line'>                              return nil;
+</span><span class='line'>                         }];</span></code></pre></td></tr></table></div></figure>
+
+
+<p>and it worked perfectly! Woot! In my particular case, I was actually using a kiwi spy to capture that success block sent to the service (though maybe I&rsquo;ll use this new trick instead), so after calling block() in that stub, I was able to immediately get the argument from the spy, whereas all other attempts at trickery were giving me &ldquo;argument not captured&rdquo; issues.</p>
+</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-18T14:35:00-04:00" pubdate data-updated="true">Jul 18<span>th</span>, 2013</time></div>
+	<div class="tags">
 
 
 	<a class='category' href='/blog/categories/ios/'>ios</a>, <a class='category' href='/blog/categories/legacy/'>legacy</a>, <a class='category' href='/blog/categories/refactor/'>refactor</a>, <a class='category' href='/blog/categories/tdd/'>tdd</a>
 
 
-</span>
-	    
-	    <span class="comments"><a href="/blog/2013/07/18/a-trick/#disqus_thread">Comments</a></span>
-	    
-	</div>
-</article>
-
+</div>
 	
+		<span class="comments"><a href="/blog/2013/07/18/a-trick/#disqus_thread">Comments</a></span>
+	
+</div></article>
 
-
-<article>
-	<h2 class="title"><a href="/blog/2013/07/06/its-ok-to-cheat-sometimes/">It's OK to Cheat Sometimes!</a></h2>
-	<div class="meta">
-		<span class="date">Jul  6</span>
-		<span class="tags">
-
-
-	<a class='category' href='/blog/categories/ios/'>ios</a>, <a class='category' href='/blog/categories/legacy/'>legacy</a>, <a class='category' href='/blog/categories/refactor/'>refactor</a>, <a class='category' href='/blog/categories/tdd/'>tdd</a>
-
-
-</span>
-	    
-	    <span class="comments"><a href="/blog/2013/07/06/its-ok-to-cheat-sometimes/#disqus_thread">Comments</a></span>
-	    
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+<!---	<a class="addthis_counter addthis_pill_style"></a> --->
 	</div>
-</article>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
 
+
+
+<section id="comment">
+    <h2 class="title">Comments</h2>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</section>
 </div>
 	<footer id="footer" class="inner"><a href="http://twitter.com/crebma">Twitter</a> •
 <a href="https://github.com/crebma">Github</a> •
@@ -166,7 +212,10 @@ Powered by Octopress.
       var disqus_shortname = 'crebma';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://crebma.com/blog/2013/07/18/a-trick/';
+        var disqus_url = 'http://crebma.com/blog/2013/07/18/a-trick/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
