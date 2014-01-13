@@ -4,7 +4,7 @@
   <title><![CDATA[Category: legacy | crebma]]></title>
   <link href="http://crebma.com/blog/categories/legacy/atom.xml" rel="self"/>
   <link href="http://crebma.com/"/>
-  <updated>2014-01-13T09:56:29-05:00</updated>
+  <updated>2014-01-13T10:08:57-05:00</updated>
   <id>http://crebma.com/</id>
   <author>
     <name><![CDATA[Amber Conville]]></name>
@@ -20,7 +20,7 @@
     <id>http://crebma.com/blog/2013/07/18/a-trick</id>
     <content type="html"><![CDATA[<p>After spending a little while trying to figure out how to wrap tests around a bit of code that looked pretty similar to this:</p>
 
-<p>```
+<p>``` objective-c Block within a block
 [[NSOperationQueue mainQueue] addOperationWithBlock:^{</p>
 
 <pre><code>            [self.service getAThingWithSuccess:^() {
@@ -34,7 +34,7 @@
 
 <p>so I could get at the [self doOtherStuff] parts and test them, I found this stub:withBlock: selector in Kiwi. So, I tried the following:</p>
 
-<p>```
+<p>``` objective-c Auto-execute the blocks!
 [[NSOperationQueue mainQueue] stub:@selector(addOperationWithBlock:)</p>
 
 <pre><code>                     withBlock:^id(NSArray *params) {

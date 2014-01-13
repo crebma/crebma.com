@@ -7,7 +7,7 @@ categories: ["ios","tdd","legacy","refactor"]
 ---
 After spending a little while trying to figure out how to wrap tests around a bit of code that looked pretty similar to this:
 
-```
+``` objective-c Block within a block
 [[NSOperationQueue mainQueue] addOperationWithBlock:^{
                 [self.service getAThingWithSuccess:^() {
 					[self doOtherStuff];
@@ -19,7 +19,7 @@ After spending a little while trying to figure out how to wrap tests around a bi
 so I could get at the [self doOtherStuff] parts and test them, I found this stub:withBlock: selector in Kiwi. So, I tried the following:
 
 
-```
+``` objective-c Auto-execute the blocks!
 [[NSOperationQueue mainQueue] stub:@selector(addOperationWithBlock:)
 						 withBlock:^id(NSArray *params) {
 		                        void(^block)(void) = params[0];
