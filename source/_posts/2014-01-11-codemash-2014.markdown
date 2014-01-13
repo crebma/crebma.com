@@ -5,4 +5,6 @@ date: 2014-01-11 18:03
 comments: true
 categories: ["slides","ios"]
 ---
-I had the honor of being invited to speak at Codemash 2014, which was my very first big conference talk. Here's the link to the slides: [https://speakerdeck.com/crebma/self-shouldtest-at-ios](https://speakerdeck.com/crebma/self-shouldtest-at-ios) and the link to the example codebase: [https://github.com/crebma/IslaNublar](https://github.com/crebma/IslaNublar)
+I had the honor of being invited to speak at Codemash 2014, which was my very first big conference talk. Here are my slides, and here's the link to the example codebase: [https://github.com/crebma/IslaNublar](https://github.com/crebma/IslaNublar)
+
+{% speakerdeck f69277005b9801317a1c324f8be9e4a6 %}
