@@ -5,11 +5,11 @@
 	<script data-cfasync="false" type="text/javascript" src="//use.typekit.net/axj3cfp.js"></script>
 	<script data-cfasync="false" type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<meta charset="utf-8">
-	<title>It's OK to Cheat Sometimes!  | crebma</title>
+	<title>CodeMash 2014  | crebma</title>
 
 <meta name="author" content="Amber Conville"> 
 
-<meta name="description" content="Lots of people have strong opinions about what you should and shouldn&rsquo;t do in testing. For the most part, those rules tend to be right. But &hellip;"> <meta name="keywords" content="">
+<meta name="description" content="I had the honor of being invited to speak at Codemash 2014, which was my very first big conference talk. Here&rsquo;s the link to the slides: https &hellip;"> <meta name="keywords" content="">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -97,24 +97,8 @@ $(document).ready(
 </header>
 
 	<div id="content" class="inner"><article class="post">
-	<h2 class="title">It's OK to Cheat Sometimes!</h2>
-	<div class="entry-content"><p>Lots of people have strong opinions about what you should and shouldn&rsquo;t do in testing. For the most part, those rules tend to be right. But deep in the heart of a huge legacy codebase, striving for tdd perfection is often a self-defeating goal. Should you be on a path to refactor and test that codebase towards that perfect tdd goal? Of course! But when you first inherit an enormous untested codebase, or are new to tdd and want to start testing your codebase, it is perfectly ok to take some shortcuts. Here are a couple of sticking points I&rsquo;ve seen people hit and then give up entirely.</p>
-
-<p><strong>DISCLAIMER:</strong> These all assume Kiwi use, because that&rsquo;s all I&rsquo;ve used so far. I&rsquo;m sure there&rsquo;s an easy translation, so long as your chosen testing framework has a robust mocking/stubbing framework in it.</p>
-
-<h4>&ldquo;I have business logic in viewWillAppear, and it&rsquo;s heavily tangled with the rest of my controller!&rdquo;</h4>
-
-<p>Spent the last two hours trying to untangle that code so you can extract it to one or more collaborators? It&rsquo;s ok. That&rsquo;s a good goal that should be met, but it doesn&rsquo;t make sense to string out several days and possibly create several bugs in the process of refactoring untested code. It can be worthwhile to &ldquo;boy scout&rdquo; that code little by little. What that means is that you leave that code a little better than you found it. Perhaps not sparkling clean, but a little better every time you touch it. A shortcut you can use to start heading in that direction is to extract everything that&rsquo;s not [super viewWillAppear] into a separate method, or even just the logical block that contains the logic you are touching. In your spec, use a class extension to declare that method in a place where your specs can see them, but the rest of your production code cannot. Now you can write characterization tests around that private method that will help build a foundation for safe future refactoring.</p>
-
-<h4>&ldquo;This controller uses ivars all over the place that I can&rsquo;t modify!&rdquo;</h4>
-
-<p>This one is not a shortcut, but it is an easy fix. Convert that ivar to a property. If it&rsquo;s a private ivar, here&rsquo;s where the same afore mentioned shortcut comes in: declare that property in a class extension in your specs.</p>
-
-<h4>&ldquo;This chunk of code makes a UIAlertView but I&rsquo;m not actually touching that code so I don&rsquo;t want to deal with it!&rdquo;</h4>
-
-<p>Stub the alloc/init methods. I know, it&rsquo;s hard to hear. You might even be wincing right now. But seriously. Factory type methods might be better, but if you&rsquo;ve already chosen a different spot in that chunk of code to boy scout, it can be helpful to stub so as not to invoke UI code.</p>
-
-<p>Again, I just want to reiterate that these should be used as stop gap measures. You know you&rsquo;re doing it right (and should feel AWESOME) as soon as you can remove these dirty little workarounds. But iOS code had been around long enough now that legacy codebases not only exist, but have grown into unmaintainable masses.</p>
+	<h2 class="title">CodeMash 2014</h2>
+	<div class="entry-content"><p>I had the honor of being invited to speak at Codemash 2014, which was my very first big conference talk. Here&rsquo;s the link to the slides: <a href="https://speakerdeck.com/crebma/self-shouldtest-at-ios">https://speakerdeck.com/crebma/self-shouldtest-at-ios</a> and the link to the example codebase: <a href="https://github.com/crebma/IslaNublar">https://github.com/crebma/IslaNublar</a></p>
 </div>
 
 
@@ -131,16 +115,16 @@ $(document).ready(
   
 
 
-<time datetime="2013-07-06T12:54:00-04:00" pubdate data-updated="true">Jul 6<span>th</span>, 2013</time></div>
+<time datetime="2014-01-11T18:03:00-05:00" pubdate data-updated="true">Jan 11<span>th</span>, 2014</time></div>
 	<div class="tags">
 
 
-	<a class='category' href='/blog/categories/ios/'>ios</a>, <a class='category' href='/blog/categories/legacy/'>legacy</a>, <a class='category' href='/blog/categories/refactor/'>refactor</a>, <a class='category' href='/blog/categories/tdd/'>tdd</a>
+	<a class='category' href='/blog/categories/ios/'>ios</a>, <a class='category' href='/blog/categories/slides/'>slides</a>
 
 
 </div>
 	
-		<span class="comments"><a href="/blog/2013/07/06/its-ok-to-cheat-sometimes/#disqus_thread">Comments</a></span>
+		<span class="comments"><a href="/blog/2014/01/11/codemash-2014/#disqus_thread">Comments</a></span>
 	
 </div></article>
 
@@ -191,8 +175,8 @@ Powered by Octopress.
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://crebma.com/blog/2013/07/06/its-ok-to-cheat-sometimes/';
-        var disqus_url = 'http://crebma.com/blog/2013/07/06/its-ok-to-cheat-sometimes/';
+        var disqus_identifier = 'http://crebma.com/blog/2014/01/11/codemash-2014/';
+        var disqus_url = 'http://crebma.com/blog/2014/01/11/codemash-2014/';
         var disqus_script = 'embed.js';
       
     (function () {

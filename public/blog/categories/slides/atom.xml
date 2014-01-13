@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: slides | crebma]]></title>
+  <link href="http://crebma.com/blog/categories/slides/atom.xml" rel="self"/>
+  <link href="http://crebma.com/"/>
+  <updated>2014-01-13T09:46:05-05:00</updated>
+  <id>http://crebma.com/</id>
+  <author>
+    <name><![CDATA[Amber Conville]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[CodeMash 2014]]></title>
+    <link href="http://crebma.com/blog/2014/01/11/codemash-2014/"/>
+    <updated>2014-01-11T18:03:00-05:00</updated>
+    <id>http://crebma.com/blog/2014/01/11/codemash-2014</id>
+    <content type="html"><![CDATA[<p>I had the honor of being invited to speak at Codemash 2014, which was my very first big conference talk. Here&rsquo;s the link to the slides: <a href="https://speakerdeck.com/crebma/self-shouldtest-at-ios">https://speakerdeck.com/crebma/self-shouldtest-at-ios</a> and the link to the example codebase: <a href="https://github.com/crebma/IslaNublar">https://github.com/crebma/IslaNublar</a></p>
+]]></content>
+  </entry>
+  
+</feed>
