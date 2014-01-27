@@ -8,13 +8,13 @@ categories: ["community","tdd","pairing","learning","detroit labs"]
 Here at [Detroit Labs](http://detroitlabs.com), we get together for an hour and a half weekly to play with a language that is new to all of us (except [Nathan Dotz](http://twitter.com/nathandotz) who has toyed with all programming languages ever). We pick a chef for the week, that person brings us in a crock pot of deliciousities, and we all gather round for the first half an hour and go through environment setup together. We try to look at the basic structure of one unit test and maybe how to make a function in said language, and when the clock hits twelve, we are done no matter how far we got. Then we go over the very quick rules and exercise. Our rules:
 
 1. TDD
-	-Write the simplest test you can to make progress
-	-Write only enough code to make your test pass
-	-Only refactor on green!
+    * Write the simplest test you can to make progress
+    * Write only enough code to make your test pass
+    * Only refactor on green!
 2. Pair!!! Ping Pong Style.
-	-You write a very simple failing test (non-compiling counts as failing)
-	-You pass the keyboard to your pair to make it pass writing only enough code as is necessary
-	-Your pair writes another simple failing test and passes the keyboard back
+    * You write a very simple failing test (non-compiling counts as failing)
+    * You pass the keyboard to your pair to make it pass writing only enough code as is necessary
+    * Your pair writes another simple failing test and passes the keyboard back
 3. You're not supposed to finish the exercise.
 4. Don't be a wang.
 

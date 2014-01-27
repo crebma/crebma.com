@@ -4,7 +4,7 @@
   <title><![CDATA[Category: community | crebma]]></title>
   <link href="http://crebma.com/blog/categories/community/atom.xml" rel="self"/>
   <link href="http://crebma.com/"/>
-  <updated>2014-01-27T10:26:03-05:00</updated>
+  <updated>2014-01-27T11:59:48-05:00</updated>
   <id>http://crebma.com/</id>
   <author>
     <name><![CDATA[Amber Conville]]></name>
@@ -22,13 +22,21 @@
 
 <ol>
 <li>TDD
- -Write the simplest test you can to make progress
- -Write only enough code to make your test pass
- -Only refactor on green!</li>
+
+<ul>
+<li>Write the simplest test you can to make progress</li>
+<li>Write only enough code to make your test pass</li>
+<li>Only refactor on green!</li>
+</ul>
+</li>
 <li>Pair!!! Ping Pong Style.
- -You write a very simple failing test (non-compiling counts as failing)
- -You pass the keyboard to your pair to make it pass writing only enough code as is necessary
- -Your pair writes another simple failing test and passes the keyboard back</li>
+
+<ul>
+<li>You write a very simple failing test (non-compiling counts as failing)</li>
+<li>You pass the keyboard to your pair to make it pass writing only enough code as is necessary</li>
+<li>Your pair writes another simple failing test and passes the keyboard back</li>
+</ul>
+</li>
 <li>You&rsquo;re not supposed to finish the exercise.</li>
 <li>Don&rsquo;t be a wang.</li>
 </ol>
